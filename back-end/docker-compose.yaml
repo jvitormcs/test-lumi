@@ -1,0 +1,30 @@
+version: "3.8"
+name: lumi_test
+services:
+  postgres:
+    container_name: lumi_test_pg
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=lumi_user_test
+      - POSTGRES_PASSWORD=efw3esdXgy5Jkm
+      - POSTGRES_DB=lumi_db_test
+  postgres_tests:
+    container_name: lumi_test_pg_tests
+    image: postgres
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=lumi_user_tests
+      - POSTGRES_PASSWORD=efw3esdXgy5Jkm
+      - POSTGRES_DB=lumi_db_tests
+    volumes:
+      - postgres_tests_data:/var/lib/postgresql/data_tests
+
+ 
+volumes:
+  postgres_data: 
+    driver: local
+  postgres_tests_data:
+    driver: local

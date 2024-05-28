@@ -1,0 +1,22 @@
+{
+  "numeroCliente": 7005400387,
+  "mesReferencia": "JAN/2023",
+  "energiaEletrica": {
+    "qtd": 622,
+    "preco_Unitario": 0.74860466,
+    "valor": 465.66
+  },
+  "energiaSCEEE": {
+    "qtd": 767,
+    "preco_Unitario": 0.65313,
+    "valor": 500.89
+  },
+  "energiaCompensada": {
+    "qtd": 767,
+    "preco_Unitario": 0.65313,
+    "valor": -500.89
+  },
+  "contribIlumPublicaMunicipal": {
+    "valor": 43.1
+  }
+}
